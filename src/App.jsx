@@ -6,7 +6,7 @@ import Cart from "./pages/frontpages/Cart";
 import Checkout from "./pages/frontpages/Checkout";
 
 import AdminLayout from "./layouts/AdminLayout";
-import AdminDashboard from "./pages/Adminpages/AdminDashboard";
+import AdminDashboard from "./pages/AdminPages/AdminDashboard";
 import AboutPage from "./pages/AdminPages/AboutPages";
 
 // Import komponen auth yang baru dibuat

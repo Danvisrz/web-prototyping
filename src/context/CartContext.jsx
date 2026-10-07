@@ -1,26 +1,23 @@
 import { createContext, useState } from "react";
 
-export const CartContext = createContext(); // Tetap gunakan nama CartContext agar tidak error di file lain
+export const CartContext = createContext();
 
 export function CartProvider({ children }) {
-  // Kita anggap cart = daftar tiket yang didaftarkan
   const [cart, setCart] = useState([]);
 
-  const addToCart = (event) => {
-    // Cek apakah user sudah daftar event ini
-    const isRegistered = cart.find((ticket) => ticket.id === event.id);
-    
-    if (isRegistered) {
-      alert("Kamu sudah terdaftar di event ini!");
-      return;
+  const addToCart = (item) => {
+    // Cek agar tidak menduplikasi tiket yang sama
+    const isExist = cart.find((e) => e.id === item.id);
+    if (!isExist) {
+      setCart([...cart, item]);
+      alert("Event berhasil didaftarkan!");
+    } else {
+      alert("Kamu sudah mendaftar event ini!");
     }
-
-    setCart([...cart, event]);
-    alert("Berhasil mendaftar event!");
   };
 
-  const removeFromCart = (eventId) => {
-    setCart(cart.filter((ticket) => ticket.id !== eventId));
+  const removeFromCart = (id) => {
+    setCart(cart.filter((item) => item.id !== id));
   };
 
   return (
