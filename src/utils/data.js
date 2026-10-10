@@ -7,7 +7,7 @@ export const events = [
     price: 0,
     quota: 50,
     description: "Pelatihan komprehensif penyusunan karya tulis ilmiah dan strategi publikasi jurnal terakreditasi untuk mahasiswa tingkat akhir.",
-    image: "event1.png"
+    image: "/event1.png"
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const events = [
     price: 25000,
     quota: 30,
     description: "Tingkatkan kemampuan berfikir kritis dan penalaran logis melalui penulisan esai bertema inovasi teknologi.",
-    image: "event2.png"
+    image: "/event2.png"
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const events = [
     price: 0,
     quota: 100,
     description: "Mari bergabung dan kembangkan minat bakat di bidang pers, karya kreatif, dan penalaran mahasiswa.",
-    image: "event3.jpeg"
+    image: "/event3.jpeg"
   },
   {
     id: 4,
@@ -37,6 +37,6 @@ export const events = [
     price: 50000,
     quota: 0,
     description: "Hands-on workshop tentang deployment aplikasi web dan self-hosting menggunakan layanan Cloud Run.",
-    image: "event4.png"
+    image: "/event4.png"
   }
 ];

@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #FAF7F2;
+    color: #2C2A29;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Playfair Display', serif;
+  }
+}

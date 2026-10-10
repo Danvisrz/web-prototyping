@@ -30,7 +30,7 @@ export default function AdminLayout() {
 
         {/* Footer */}
         <footer className="bg-white border-t p-4 text-center text-sm">
-          © 2025 My Admin App v1.0.0
+          © 2026 Danvisrz's EventHub. All rights reserved.
         </footer>
       </div>
     </div>
